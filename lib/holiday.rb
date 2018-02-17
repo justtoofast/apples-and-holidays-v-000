@@ -72,8 +72,8 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_phrase = holidays_to_words.split(' ').collect {|word| word.capitalize! }.join(' ')
       puts "#{holiday_phrase}: #{supplies.join(",")}"
 
+    end
   end
-end
 end
 
 def all_holidays_with_bbq(holiday_hash)
