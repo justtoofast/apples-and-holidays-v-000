@@ -70,7 +70,7 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_string = holiday.to_s
       holidays_to_words = holiday_string.tr_s("_", " ")
       holiday_phrase = holidays_to_words.split(' ').map {|word| word.capitalize }.join(' ')
-      puts "#{holiday_phrase}: #{supplies.join(", ")}"
+      puts "# {holiday_phrase}: #{supplies.join(", ")}"
 
     end
   end
