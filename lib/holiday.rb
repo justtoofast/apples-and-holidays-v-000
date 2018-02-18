@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
     holidays.each do |holiday, supplies|
       holiday_string = holiday.to_s
       holidays_to_words = holiday_string.tr_s("_", " ")
-      holiday_phrase = holidays_to_words.split(' ').collect {|word| word.capitalize }.join(' ')
+      holiday_phrase = holidays_to_words.split(' ').map {|word| word.capitalize }.join(' ')
       puts "#{holiday_phrase}: #{supplies.join(", ")}"
 
     end
@@ -90,4 +90,4 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_bbq
 end
 
-end
+
